@@ -1,9 +1,4 @@
-<ul>
-  <li *ngFor="let item of menus;let i = index;">
-    <a href="#" [class.active]="i===selectedIndex"
-    (click)="selectedIndex=i">{{item.title}}</a>
-  </li>
-
-</ul>
+<app-scrollable-tab [menus]="toMenus" [backgroundColor]="'red'" titleColor="#fff" (tabSelected)="handleTabSelected($event)">
+</app-scrollable-tab>
 
 <router-outlet></router-outlet>
