@@ -1,4 +1,6 @@
-<app-scrollable-tab [menus]="toMenus" [backgroundColor]="'red'" titleColor="#fff" (tabSelected)="handleTabSelected($event)">
+<app-scrollable-tab [menus]="toMenus" [backgroundColor]="'red'" titleColor="#fff"
+  (tabSelected)="handleTabSelected($event)">
 </app-scrollable-tab>
 
+<app-image-slider [sliders]="imageSliders"></app-image-slider>
 <router-outlet></router-outlet>

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { TopMenu } from './components';
+import { TopMenu, ImageSlider } from './components';
 
 
 @Component({
@@ -77,6 +77,34 @@ export class AppComponent {
       title: '家具',
       link: ''
     }
+  ];
+
+  imageSliders: ImageSlider[] = [
+    {
+      imgUrl: 'https://via.placeholder.com/600X50',
+      link: '',
+      caption: ''
+    },
+    {
+      imgUrl: 'https://via.placeholder.com/600X50',
+      link: '',
+      caption: ''
+    },
+    {
+      imgUrl: 'https://via.placeholder.com/600X50',
+      link: '',
+      caption: ''
+    },
+    {
+      imgUrl: 'https://via.placeholder.com/600X50',
+      link: '',
+      caption: ''
+    },
+    {
+      imgUrl: 'https://via.placeholder.com/600X50',
+      link: '',
+      caption: ''
+    },
   ];
 
   handleTabSelected(tabMenu: TopMenu) {
